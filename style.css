@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --txt-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 0.5s ease-in;
+}
+
+nav {
+    background-color: #0f1035;
+    height: 60px;
+    box-shadow: 10px 0 10px 10px white;
+    border-bottom: 3px solid;
+}
+
+nav img {
+    width: 60px;
+    height: 58px;
+    margin-left: 10%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    list-style: none;
+    margin-top: 15px;
+    margin-right: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: blue;
+    /* font-size: 22px; */
+    transition: 0.2s ease-in;
+
+}
+
+.first {
+    display: flex;
+    background-color: #7fc7d9;
+    height: 100vh;
+}
+
+.left {
+    width: 50vw;
+    margin-top: 10%;
+}
+
+.left h4 {
+    margin-top: 50px;
+    margin-left: 30%;
+}
+
+.left h3 {
+    margin-left: 34%;
+    font-size: 32px;
+}
+
+.left h1 {
+    margin-left: 37%;
+    font-size: 45px;
+    color: rgb(186, 123, 6);
+}
+
+.left p {
+    width: 400px;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+.right {
+    margin-top: 6%;
+}
+
+.right img {
+    width: 500px;
+    margin-top: 25px;
+    border-radius: 10%;
+    filter: drop-shadow(10px 0px 0px black);
+    animation: circle 1s infinite;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes circle {
+    0% {
+        filter: drop-shadow(10px 0px 0px black);
+    }
+
+    25% {
+        filter: drop-shadow(10px 10px 0px black);
+    }
+
+    50% {
+        filter: drop-shadow(-10px 10px 0px black);
+    }
+
+    75% {
+        filter: drop-shadow(-10px -10px 0px black);
+    }
+
+    100% {
+        filter: drop-shadow(10px 0px 0px black);
+    }
+}
+
+img:hover {
+    transform: rotateY(360deg);
+    transition: 0s ease-in-out;
+
+}
+
+.btn {
+    background-color: #302b6a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    position: absolute;
+    left: 15%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+.skills {
+    display: flex;
+    background-color: #365486;
+    height: 44vh;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.card-container h1 {
+    position: absolute;
+    color: black;
+    z-index: 1;
+}
+
+.web,
+.seo {
+    height: 44vh;
+    width: 30vw;
+    border: none;
+    background-color: #365486;
+    border-right: 1px solid olive;
+    margin-left: 15px;
+    position: relative;
+}
+
+.designs {
+    margin-left: 15px;
+    height: 44vh;
+    width: 350px;
+    border: none;
+    background-color: #365486;
+}
+
+.card-title {
+    position: absolute;
+    top: 180px;
+    text-align: center;
+}
+
+.web p {
+    position: relative;
+    top: 8rem;
+}
+
+.seo p {
+    position: relative;
+    top: 8rem;
+}
+
+.designs p {
+    position: relative;
+    top: 8rem;
+}
+
+.skill-img img {
+    width: 90px;
+    height: 98px;
+    border-radius: 50%;
+}
+
+.skill-img img {
+    top: 70px;
+    display: flex;
+    position: relative;
+    margin: auto;
+    right: auto;
+}
+
+.overly {
+    background-color: gray;
+}
+
+.contact-form {
+    height: 55vh;
+    background-color: #dcf2f1;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    width: 40%;
+    border-radius: 10%;
+    transform: translate(-50%, -50%);
+    transition: 0.9s ease-out;
+}
+
+.showform {
+    left: 50%;
+}
+
+.contact-form h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+div input {
+    height: 1.5rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 3px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+div textarea {
+    margin: auto;
+    width: 50%;
+    margin-top: 10px;
+    padding: 3px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.btn-submit {
+    background-color: #302b6a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100px;
+    margin: 0px 30%;
+    margin-top: 10px;
+}
+
+.btn-can {
+    position: absolute;
+    margin: 19px 50%;
+    bottom: 8px;
+}
+
+.about-sec {
+    height: 90vh;
+    display: flex;
+    background-color: #dcf2f1;
+}
+
+.left-about {
+    width: 50vw;
+    height: 90vh;
+    margin-top: 5%;
+}
+
+.left-about img {
+    height: 500px;
+    margin: 10px 30%;
+    border-left: 30px solid white;
+    border-top: 30px solid white;
+    border-bottom: 30px solid white;
+    border-end-end-radius: 100px;
+    border-right-style: double;
+    border-top-style: groove;
+    border-left-style: groove;
+    border-bottom-style: groove;
+}
+
+.right-about {
+    height: 90vh;
+    width: 50vw;
+    background: url('1\ \(3\).jpg');
+    background-size: cover;
+    filter: blur(10px);
+    position: relative;
+}
+
+.about-txt {
+    position: absolute;
+    right: 5px;
+    border: 8px double white;
+    z-index: 3;
+    height: 75vh;
+    width: 43vw;
+    left: 53%;
+    margin-top: 50px;
+}
+
+.right-text {
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    right: 40%;
+    margin-top: 10px;
+    color: var(--txt-color);
+}
+
+.right-s-text {
+    text-align: center;
+    margin-top: 15%;
+    color: var(--txt-color);
+    font-weight: 800;
+}
+
+.right-p-text {
+    position: absolute;
+    text-align: center;
+    margin-top: 55px;
+    color: var(--txt-color);
+}
+
+.ranges .txt {
+    text-align: center;
+    margin-top: 150px;
+    color: var(--txt-color);
+    font-size: 32px;
+}
+
+.ranges div ul li {
+    font-size: 15px;
+    list-style: none;
+    margin-left: 300px;
+    margin-top: 10px;
+    color: var(--txt-color);
+}
+
+.photos {
+    border-radius: 10px;
+}
+
+.box div {
+    display: flex;
+    position: relative;
+    margin: 20px 10%;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.last-cont-h2 {
+    position: absolute;
+    margin-top: 25px;
+    text-align: center;
+}
+
+hr {
+    width: 80vw;
+    text-align: center;
+    margin: auto;
+    height: 5px;
+    background-color: #0f1035;
+}
+
+.last-cont-p {
+    position: relative;
+    top: 90px;
+    padding: 0px 25px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    height: 70px;
+    text-align: center;
+    padding-top: 25px;
+}
